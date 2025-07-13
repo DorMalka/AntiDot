@@ -1,39 +1,114 @@
-<<<<<<< HEAD
 # AntiDot
-=======
-# AntiDot
-# Installation
-1. Please Install all 3 files
-1.a. https://code.visualstudio.com/docs/?dv=win64user
-1.b. https://github.com/analogdevicesinc/libiio/releases/tag/v0.25 - libiio-0.25.gb6028fd-setup.exe
-1.c. https://www.python.org/ - Dowloads->python 3.13.5
-2. Open VS Code
-3. Press CTRL+Shift+P
-4. Type Terminal: Select Default Profile
-5. Choose Command Prompt
-6. On the left toolbar downlaod these Extensions: C/C++,CMakem tools, GitHub CoPilot, GitHub Pull Request, Jupyter, Python, Python Debugger
-7. Open Terminal by pressing CTRL+`
 
-Note - terminal should be CMD now and not powershell
-8. Open project Directory
-9. Connect to Our Git by - git clone https://github.com/DorMalka/AntiDot.git (signing into GitHub might be requested)
+## Stage 1: Install Required Software
 
-Note: now you suppose to be at AntiDot directory
-10. create environment - python -m venv venv
-11. activate environment - venv\Scripts\activate
+1. Please install all 3 files:
+   - https://code.visualstudio.com/docs/?dv=win64user
+   - https://github.com/analogdevicesinc/libiio/releases/tag/v0.25  
+     ↳ Download: `libiio-0.25.gb6028fd-setup.exe`
+   - https://www.python.org/  
+     ↳ Go to Downloads → Python 3.13.5
 
-Note: Now your path shold be appear with (venv) in the beginning
-12. pip install pylibiio
-13. pip show pylibiio - to Validate the installation succeeded Name, Version and Location should be appeared.
-14. run python start.py
+---
 
-Note: In case no Pluto SDR connected, you should receive: OSError: [Errno 0] No error
+## Stage 2: Open VS Code and Configure Terminal
 
-In case of other Error - please contact me
-15. Try to change something small in ReadMe and Commit+Push so we can validate working parallelism
-Note: Commit+Push is done via left toolbar In Source Control. Edited files will be appeared under Changes.
-Click + to Stage and Commit.
+2. Open VS Code  
+3. Press `Ctrl + Shift + P`  
+4. Type `Terminal: Select Default Profile`  
+5. Choose **Command Prompt**
 
-After clicking commit a Commit message will be opened. right your commit message and then close the window. 
+---
 
-After closing window the commit will be initiated.
+## Stage 3: Install Extensions
+
+6. From the left toolbar, install the following extensions:
+   - C/C++
+   - CMake Tools
+   - GitHub CoPilot
+   - GitHub Pull Request
+   - Jupyter
+   - Python
+   - Python Debugger
+
+---
+
+## Stage 4: Open Terminal
+
+7. Open the terminal by pressing: `Ctrl + \`` (backtick)  
+   ➤ Make sure the terminal now uses **CMD** and not PowerShell.
+
+---
+
+## Stage 5: Clone the Project from GitHub
+
+8. Open the folder where you want the project  
+9. Clone the Git repository:
+   git clone https://github.com/DorMalka/AntiDot.git
+
+## Stage 6: Create and Activate the Python Environment
+
+10. Create the environment:
+
+    python -m venv venv
+
+11. Activate the environment:
+
+    venv\Scripts\activate
+
+**Note:** Once activated, your terminal path should begin with `(venv)`.
+
+---
+
+## Stage 7: Install pylibiio and Validate Installation
+
+12. Install the required package:
+
+    pip install pylibiio
+
+13. Validate the installation succeeded:
+
+    pip show pylibiio
+
+**You should see:**
+- Name  
+- Version  
+- Location  
+
+If all three appear — the installation was successful.
+
+---
+
+## Stage 8: Run the Project and Push a Test Commit
+
+14. Run the main script:
+
+    python start.py
+
+**Note:**  
+- If no Pluto SDR is connected, you should see:  
+  `OSError: [Errno 0] No error` → This is expected  
+- If any **other error** appears, please contact me.
+
+---
+
+15. Test Git collaboration by editing and pushing a change:
+
+Try editing something small in the `README.md`, then commit and push the change.
+
+**Steps to Commit + Push in VS Code:**
+
+- Go to the **Source Control** tab (left toolbar)
+- Your edited files will appear under **Changes**
+- Click the `+` next to the file to **Stage** it
+- Click the **✓** to **Commit**
+- A commit message window will open  
+  → Write your message and **close the window**
+- The commit will now be saved
+- Click **Sync Changes** or run:
+
+    git push
+
+---
+
+✅ If you reach this point, everything is working correctly — the project is running, Git is syncing, and your environment is ready.

@@ -64,9 +64,9 @@
 
 12. Install the required package:
 
-    pip install pylibiio
-    pip install pyadi-iio
-    pip install matplotlib 
+  - pip install pylibiio
+  - pip install pyadi-iio
+  - pip install matplotlib 
 
 13. Validate the installation succeeded:
 

@@ -65,6 +65,8 @@
 12. Install the required package:
 
     pip install pylibiio
+    pip install pyadi-iio
+    pip install matplotlib 
 
 13. Validate the installation succeeded:
 
@@ -83,7 +85,7 @@ If all three appear — the installation was successful.
 
 14. Run the main script:
 
-    python start.py
+    python pluto_2t_2r.py
 
 **Note:**  
 - If no Pluto SDR is connected, you should see:  
